@@ -1,5 +1,4 @@
 ﻿# Set variables
-# use $filterCreater = "All" to get all MachineGroups
 $MGroupName = "PS Test2"
 $MGroupDescription = "PS Test Description"
 $MGroupPatch = ""
@@ -18,7 +17,7 @@ if (Get-Module -ListAvailable -Name STProtect) {
     # Module STProtect is loaded and available to use
     # Do action!
 
-    Add-MachineGroupItem -EndpointNames Windows7User -Name "PS Test2" -CredentialFriendlyName Administrator -Note "Dit is een test"
+    Add-MachineGroup -Name $mgroupname -Description $mgroupdescription
  
 }
 # module not loaded
