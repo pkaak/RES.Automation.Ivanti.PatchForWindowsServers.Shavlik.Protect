@@ -1,9 +1,9 @@
 ﻿# Set variables
 # use $filterCreater = "All" to get all MachineGroups
-$MGroupName = "PS-Test"
-$Endpointname ="Windows7User"
+$MGroupName = "Groupname"
+$Endpointname ="Endpoint"
 
-$password = 'RE$Rule$'
+$password = 'Password'
 
 # Import API module
 Import-Module STProtect -force
